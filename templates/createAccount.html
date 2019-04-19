@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+
+	<div id="registration">
+		<span>Create An Account</span>
+		<hr>
+		<form class="form" method="POST">
+			<label>First name: </label>
+			<input type="text" name="firstName" placeholder="Enter first name" size="15" />
+			<label>Middel name: </label>
+			<input type="text" name="middeleName" placeholder="M" size="1" />
+			<label>Last name: </label>
+			<input type="text" name="lastName" placeholder="Enter last name" size="15" />
+			<br>
+			<label>E-mail: </label>
+			<input type="email" name="email" placeholder="Enter email" size="40" />
+			<br>
+			<label>Password: </label>
+			<input type="password" name="password" placeholder="Enter password" size="20" />
+			<br>
+			<label>Confirm Password: </label>
+			<input type="password" name="confirmPassword" placeholder="Enter same password " size="20" />
+			<br>
+			<input type="checkbox" name="checkbox" />
+			<label class="disabled">Remember me</label>
+			<label class="disabled">Forgot password ? <a href="#">click me</a></label>
+			<br>
+			<button class="btn btn-primary" value="submit" name="submit" type="button" onclick="alert('Account create successfully!')">Submit</button>
+		</form>
+	</div>
+
+
+
+{% endblock content %}
